@@ -20,11 +20,11 @@ Firstly, the data generated is read. For this the csv package available in pytho
 
 Secondly, after creating arrays of image names and corresponding steering wheel angle values, these are converted into numpy arrays and are stored in training variables.
 
-![](https://github.com/pratvdev/CarND-BehaviarolCloning/blob/master/Driving_Data/Example%20Images/center_2017_04_26_21_00_42_738.jpg?style=center "Center Image Before Cropping")
+![](https://github.com/pratvdev/CarND-BehaviarolCloning/blob/master/Driving_Data/Example%20Images/center_2017_04_26_21_00_42_738.jpg?raw=true "Center Image Before Cropping")
 
-![](https://github.com/pratvdev/CarND-BehaviarolCloning/blob/master/Driving_Data/Example%20Images/left_2017_04_26_21_00_42_738.jpg?style=center "Left Image Before Cropping")
+![](https://github.com/pratvdev/CarND-BehaviarolCloning/blob/master/Driving_Data/Example%20Images/left_2017_04_26_21_00_42_738.jpg?raw=true "Left Image Before Cropping")
 
-![](https://github.com/pratvdev/CarND-BehaviarolCloning/blob/master/Driving_Data/Example%20Images/right_2017_04_26_21_00_42_738.jpg?style=center "Right Image Before Cropping")
+![](https://github.com/pratvdev/CarND-BehaviarolCloning/blob/master/Driving_Data/Example%20Images/right_2017_04_26_21_00_42_738.jpg?raw=true "Right Image Before Cropping")
 
 **These examples images and the driving_log.csv file used are available in the folder Driving_Data**
 
