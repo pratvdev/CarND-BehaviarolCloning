@@ -20,6 +20,8 @@ Firstly, the data generated is read. For this the csv package available in pytho
 
 Secondly, after creating arrays of image names and corresponding steering wheel angle values, these are converted into numpy arrays and are stored in training variables.
 
+### Images recorded in the simulator
+
 ![](https://github.com/pratvdev/CarND-BehaviarolCloning/blob/master/Driving_Data/Example%20Images/center_2017_04_26_21_00_42_738.jpg?raw=true "Center Image Before Cropping")
 
 ![](https://github.com/pratvdev/CarND-BehaviarolCloning/blob/master/Driving_Data/Example%20Images/left_2017_04_26_21_00_42_738.jpg?raw=true "Left Image Before Cropping")
@@ -30,8 +32,18 @@ Secondly, after creating arrays of image names and corresponding steering wheel 
 
 The training data is split into two parts. **70%** of the data is used for training and **30%** of the data is used for validation.
 
-Lambda feature in keras is used to furthur preprocess the data. The RGB pixel values are converted to values between 0 and 1 and later 0.5 is subtracted from these values.
-The top portion of the imaged contains data which is not related to the road and the bottom part of the image contains the hood of the car. The top 70 and bottom 20 layers of the image are cropped for training the data effectively. For cropping the image, Cropping2D from keras is used.
+For preprocessing and augumentation of data the Lambda and Cropping2D feature of Keras is used.
+The images are normalised using Lambda by converting the RGB pixel values to 0 and 1 and later 0.5 is subtracted from these values.
+Coming to the original images, the top portion of the image contains data which is not related to the road and the bottom part of the image contains the hood of the car. The top 70 rows and bottom 25 rows of pixels of the images are cropped for training the data effectively. For cropping the image, Cropping2D from keras is used. The example images after cropping are given below. 
+The angle correction is added/subtracted to the steering wheel angle recorded for these images. This is the data augumentation step of the model. These cropped and normalised images are used for training the data. 
+
+### Images after cropping
+
+![](https://github.com/pratvdev/CarND-BehaviarolCloning/blob/master/Driving_Data/Example%20Images/center_cropped_2017_04_26_21_00_42_738.jpg?raw=true "Center Image After Cropping")
+
+![](https://github.com/pratvdev/CarND-BehaviarolCloning/blob/master/Driving_Data/Example%20Images/left_cropped_2017_04_26_21_00_42_738.jpg?raw=true "Left Image After Cropping")
+
+![](https://github.com/pratvdev/CarND-BehaviarolCloning/blob/master/Driving_Data/Example%20Images/right_cropped_2017_04_26_21_00_42_738.jpg?raw=true "Right Image After Cropping")
 
 ## Model Architecture
 
