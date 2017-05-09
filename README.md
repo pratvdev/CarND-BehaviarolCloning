@@ -20,11 +20,11 @@ Firstly, the data generated is read. For this the csv package available in pytho
 
 Secondly, after creating arrays of image names and corresponding steering wheel angle values, these are converted into numpy arrays and are stored in training variables.
 
-![Center Image - Before Cropping](/home/pratvdev/Documents/Udacity/SelfDrivingCar/Behavirol_Cloning_P3/Uploaded Data/Driving_Data/Example Images/center_2017_04_26_21_00_42_738.jpg)
+![Center Image - Before Cropping] (/home/pratvdev/Documents/Udacity/SelfDrivingCar/Behavirol_Cloning_P3/Uploaded Data/Driving_Data/Example Images/center_2017_04_26_21_00_42_738.jpg)
 
-![Left Image - Before Cropping](/home/pratvdev/Documents/Udacity/SelfDrivingCar/Behavirol_Cloning_P3/Uploaded Data/Driving_Data/Example Images/left_2017_04_26_21_00_42_738.jpg)
+![Left Image - Before Cropping] (/home/pratvdev/Documents/Udacity/SelfDrivingCar/Behavirol_Cloning_P3/Uploaded Data/Driving_Data/Example Images/left_2017_04_26_21_00_42_738.jpg)
 
-![Right Image - Before Cropping](/home/pratvdev/Documents/Udacity/SelfDrivingCar/Behavirol_Cloning_P3/Uploaded Data/Driving_Data/Example Images/right_2017_04_26_21_00_42_738.jpg)
+![Right Image - Before Cropping] (/home/pratvdev/Documents/Udacity/SelfDrivingCar/Behavirol_Cloning_P3/Uploaded Data/Driving_Data/Example Images/right_2017_04_26_21_00_42_738.jpg)
 
 **The examples images and the driving_log.csv file used are available in the folder Driving_Data**
 
